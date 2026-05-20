@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Itinerario de viaje a Tenerife con rutas, parkings, horarios, mapas e imagen principal por día.">
+    <title>Itinerario Tenerife</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" id="top">
+        <a class="brand" href="#top" aria-label="Inicio del itinerario">
+          <span class="brand-mark">TF</span>
+          <span>Itinerario Tenerife</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#itinerario">Días</a>
+          <a href="#consejos">Consejos</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <div class="hero-content">
+            <p class="eyebrow">22 - 26 de mayo</p>
+            <h1 id="trip-title">Itinerario de Tenerife</h1>
+            <p class="hero-copy" id="trip-description">
+              Ruta real por costa norte, Anaga, Teno, Masca, La Orotava, Teide y Los Gigantes.
+            </p>
+            <div class="hero-panel" aria-label="Resumen del viaje">
+              <div>
+                <span class="stat-value" id="summary-days">0</span>
+                <span class="stat-label">días</span>
+              </div>
+              <div>
+                <span class="stat-value" id="summary-stops">0</span>
+                <span class="stat-label">paradas</span>
+              </div>
+              <div>
+                <span class="stat-value" id="summary-theme">Ruta</span>
+                <span class="stat-label">viaje</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-heading" id="itinerario">
+          <p class="eyebrow">Plan diario</p>
+          <h2>Itinerario completo</h2>
+          <p>Abre cada día para ver horarios, rutas, parkings, avisos y enlaces directos a Google Maps.</p>
+        </section>
+
+        <section class="days-list" id="days-container" aria-live="polite">
+          <div class="loading-card">
+            <span class="loader" aria-hidden="true"></span>
+            <p>Cargando itinerario...</p>
+          </div>
+        </section>
+
+        <section class="tips-section" id="consejos">
+          <div class="section-heading">
+            <p class="eyebrow">Notas útiles</p>
+            <h2>Consejos del viaje</h2>
+          </div>
+          <div class="tips-grid" id="tips-container"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <p class="eyebrow">Resumen</p>
+          <h2 id="footer-title">Itinerario Tenerife</h2>
+          <p id="footer-summary">Ruta estática compatible con GitHub Pages.</p>
+        </div>
+        <a class="footer-link" href="#top">Volver arriba</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
